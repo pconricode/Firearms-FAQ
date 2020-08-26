@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Firearms FAQ Page</title>
+</head>
+<body>
+    
+    <div class="faq">
+        <button class="accordion">CAN I BUY FIREARMS ONLINE?</button>
+        <div class="panel">
+            <p>No.</p>
+        </div>
+
+        <button class="accordion">DO YOU DO FFL TRANSFERS?</button>
+        <div class="panel">
+            <p>No.</p>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for(i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function(){
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
