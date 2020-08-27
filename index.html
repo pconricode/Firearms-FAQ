@@ -59,11 +59,18 @@
 
     </div>
 
+    <div>
+        
+        <p>Perry</p>
+
+    </div>
+
 
 
     <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
+        var icon = document.getElementsByClassName("star-icon");
 
         for(i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function(){
@@ -72,11 +79,28 @@
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {
                     panel.style.maxHeight = null;
+
                 } else {
                     panel.style.maxHeight = panel.scrollHeight + "px";
+
                 }
             });
+
         }
+
+
+
+
+
+
+        //         if (this.classList.toggle("active")) {
+        //             icon.style.transitionDuration = ".55s";
+        //             icon.style.transform = "rotate(25deg)";
+        //         }
+        // 
+        
+
+
     </script>
 
 

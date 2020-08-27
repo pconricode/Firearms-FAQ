@@ -4,7 +4,6 @@
 }
 
 .star-icon {
-    transform: scale(.10);
     display: inline-block;
 }
 
@@ -50,7 +49,6 @@
 .accordion:before {
     content: url(../images/star.png);
     font-size: 15px;
-    /* float: left; */
     margin-left: 5px;
     margin-right: 10px;
     margin-bottom: 15px;
@@ -61,7 +59,9 @@
 }
 
 .active:before {
-    content: url(../images/star-rotated.png);
+    content: url(../images/star.png);
+    transition-duration: .55s;
+    transform: rotate(25deg);
 }
 
 .signup {
