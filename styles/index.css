@@ -35,7 +35,7 @@
     padding: 0 18px;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.25s ease-out;
     background-color: lightgray;
     font-family: "montserratregular",Helvetica,Arial,sans-serif;
     border: 2px solid lightgray;
@@ -56,12 +56,16 @@
     font-size: 30px;
     display: inline-block;
     height: 35px;
+    transform-origin: center;
+    transition-duration: .25s;
+    transform: rotate(0deg);
 }
 
 .active:before {
     content: url(../images/star.png);
+    transform-origin: center;
     transition-duration: .55s;
-    transform: rotate(25deg);
+    transform: rotate(45deg);
 }
 
 .signup {
