@@ -56,16 +56,16 @@
     font-size: 30px;
     display: inline-block;
     height: 35px;
-    transform-origin: center;
     transition-duration: .25s;
     transform: rotate(0deg);
+    transform-origin: center;
 }
 
 .active:before {
     content: url(../images/star.png);
-    transform-origin: center;
     transition-duration: .55s;
     transform: rotate(45deg);
+    transform-origin: center;
 }
 
 .signup {
