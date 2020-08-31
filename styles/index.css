@@ -1,4 +1,30 @@
 
+.banner {
+    display: block;
+    margin: 0 auto 40px auto;
+    width: 75%;
+    height: auto;
+}
+
+.info-text {
+    display: block;
+    margin: 0 auto 40px auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1.25em;
+    color: #282728;
+    font-family: "montserratregular",Helvetica,Arial,sans-serif;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.faq-banner {
+    display: block;
+    margin: 0 auto 40px auto;
+}
+
 .rotate {
     transform: rotate(25deg);
 }
@@ -8,7 +34,7 @@
 }
 
 .faq {
-    background-color: gray;
+    background-color: #e3e3e3;
     width: 1032px;
     display: block;
     margin-left: auto;
@@ -17,7 +43,9 @@
 
 .button-text {
     position: relative;
-    left: 100px;
+    left: 50px;
+    bottom: 7px;
+    font-size: 18px;
 }
 
 .accordion {
@@ -27,6 +55,7 @@
     padding: 18px;
     border: 1px solid white;
     width: 1032px;
+    height: 65px;
     text-align: left;
     transition: 0.2s;
     outline: none;
@@ -43,8 +72,8 @@
     transition: max-height 0.25s ease-out;
     background-color: #ffffff;
     font-family: "montserratregular",Helvetica,Arial,sans-serif;
-    border-left: 2px solid #e3e3e3;
-    border-bottom: 2px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
     color: #282728;
 
 }
@@ -54,7 +83,9 @@
 }
 
 .accordion:before {
-    content: url(../images/star.png);
+    position: relative;
+    bottom: 7px;
+    content: url(../images/new-star.png);
     font-size: 15px;
     margin-left: 5px;
     margin-right: 10px;
@@ -69,7 +100,7 @@
 }
 
 .active:before {
-    content: url(../images/star.png);
+    content: url(../images/new-star.png);
     transition-duration: .55s;
     transform: rotate(45deg);
     transform-origin: center;
@@ -93,6 +124,58 @@
     height: auto;
 }
 
+.form-4473 {
+    display: block;
+    margin: 40px auto;
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto 1fr;
+    grid-template-rows: auto auto;
+    margin: 40px auto 0 auto;
+}
+
+.ammo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.firearms {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.shooting-acc {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.target-shooting {
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+.reloading {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.optics {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.gun-storage {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.cleaning-maint {
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
 
 @media only screen and (max-width: 1400px) {
 
@@ -101,12 +184,32 @@
     }
 }
 
+@media only screen and (max-width: 1300px) {
+
+    .banner {
+        width: 90%;
+    }
+
+    .faq {
+        width: 75%;
+    }
+
+    .accordion {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+
+}
 
 @media only screen and (max-width: 768px) {
 
-    .faq {
+    /* .faq {
         width: 100%;
-    }
+    } */
 }
 
 
