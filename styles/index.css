@@ -191,7 +191,7 @@
     }
 
     .faq {
-        width: 75%;
+        width: 90%;
     }
 
     .accordion {
@@ -200,18 +200,76 @@
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1100px) {
 
+    .link-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
 
+    .ammo{
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+    
+    .firearms {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+    
+    .shooting-acc {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+    
+    .target-shooting {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+    
+    .reloading {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+    
+    .optics {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+    
+    .gun-storage {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+    
+    .cleaning-maint {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+
+    .form-4473 {
+        width: 80%;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 768px) {
 
-    /* .faq {
-        width: 100%;
-    } */
-}
+    .faq-banner {
+        width: 85%;
+    }
 
+    .info-text {
+        width: 70%;
+    }
+}
 
 @media only screen and (max-width: 500px) {
     .accordion {
