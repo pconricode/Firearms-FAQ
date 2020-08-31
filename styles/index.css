@@ -9,19 +9,24 @@
 
 .faq {
     background-color: gray;
-    width: 80%;
+    width: 1032px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+.button-text {
+    position: relative;
+    left: 100px;
+}
+
 .accordion {
-    background-color: gray;
-    color: #034b2f;
+    background-color: #e3e3e3;
+    color: #15223a;
     cursor: pointer;
     padding: 18px;
     border: 1px solid white;
-    width: 100%;
+    width: 1032px;
     text-align: left;
     transition: 0.2s;
     outline: none;
@@ -36,9 +41,11 @@
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.25s ease-out;
-    background-color: lightgray;
+    background-color: #ffffff;
     font-family: "montserratregular",Helvetica,Arial,sans-serif;
-    border: 2px solid lightgray;
+    border-left: 2px solid #e3e3e3;
+    border-bottom: 2px solid #e3e3e3;
+    color: #282728;
 
 }
 
@@ -96,31 +103,28 @@
 
 
 @media only screen and (max-width: 768px) {
-    .info {
-        width: 90%;
-    }
 
     .faq {
         width: 100%;
-    }
-
-    .signup {
-        position: static;
-        float: right;
-    }
-
-    .bottom-note {
-        margin-top: 175px;
     }
 }
 
 
 @media only screen and (max-width: 500px) {
     .accordion {
-        font-size: 1em;
+        font-size: .75em;
+        max-height: 75px;
+        line-height: 0px;
+        vertical-align: middle;
     }
 
     .accordion:before {
         font-size: 1.2em;
+        transform: scale(.6);
+        margin-bottom: 3px;
+    }
+
+    .button-text {
+        left: 0px;
     }
 }
