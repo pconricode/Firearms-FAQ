@@ -22,7 +22,7 @@
 
 .faq-banner {
     display: block;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 30px auto;
 }
 
 .rotate {
@@ -44,11 +44,13 @@
 .button-text {
     position: relative;
     left: 50px;
-    bottom: 7px;
     font-size: 18px;
+    flex-grow: 1;
 }
 
 .accordion {
+    display: flex;
+    align-items: center;
     background-color: #e3e3e3;
     color: #15223a;
     cursor: pointer;
@@ -83,13 +85,13 @@
 }
 
 .accordion:before {
-    position: relative;
-    bottom: 7px;
+    /* position: relative;
+    bottom: 7px; */
     content: url(../images/new-star.png);
     font-size: 15px;
     margin-left: 5px;
     margin-right: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     vertical-align: middle;
     font-size: 30px;
     display: inline-block;
@@ -258,34 +260,60 @@
         width: 80%;
         height: auto;
     }
+
+    .button-text {
+        left: 10px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
 
     .faq-banner {
         width: 85%;
+        margin-bottom: 15px;
     }
 
     .info-text {
         width: 70%;
     }
+
+    .button-text {
+        font-size: 15px;
+    }
 }
 
+
 @media only screen and (max-width: 500px) {
+    
+    .info-text {
+        font-size: 3.75vw;
+    }
+
     .accordion {
         font-size: .75em;
         max-height: 75px;
-        line-height: 0px;
         vertical-align: middle;
     }
 
     .accordion:before {
         font-size: 1.2em;
-        transform: scale(.6);
+        /* transform: scale(.6); */
         margin-bottom: 3px;
     }
 
     .button-text {
         left: 0px;
+    }
+
+    .form-4473 {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 470px) {
+
+    .button-text {
+        font-size: 3.25vw;
     }
 }
