@@ -81,7 +81,7 @@
 }
 
 .active, .accordion:hover {
-    color: white;
+    /* color: white; */
 }
 
 .accordion:before {
