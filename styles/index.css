@@ -80,9 +80,9 @@
 
 }
 
-.active, .accordion:hover {
-    /* color: white; */
-}
+/* .active, .accordion:hover {
+    color: white;
+} */
 
 .accordion:before {
     /* position: relative;
