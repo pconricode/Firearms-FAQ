@@ -1,4 +1,90 @@
 
+/* Modal Styling */
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+
+/* End Modal Styling */
+
 .banner {
     display: block;
     margin: 0 auto 40px auto;
@@ -14,6 +100,9 @@
     font-size: 1.25em;
     color: #282728;
     font-family: "montserratregular",Helvetica,Arial,sans-serif;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .nowrap {
@@ -35,14 +124,14 @@
 
 .faq {
     background-color: #e3e3e3;
-    width: 1032px;
+    width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .button-text {
-    position: relative;
+    position: inherit;
     left: 50px;
     font-size: 18px;
     flex-grow: 1;
@@ -56,8 +145,8 @@
     cursor: pointer;
     padding: 18px;
     border: 1px solid white;
-    width: 1032px;
-    height: 65px;
+    width: 100%;
+    height: auto;
     text-align: left;
     transition: 0.2s;
     outline: none;
@@ -178,14 +267,7 @@
     grid-row: 2/3;
 }
 
-
-@media only screen and (max-width: 1400px) {
-
-    .top-header {
-        width: 100%;
-    }
-}
-
+/* 
 @media only screen and (max-width: 1300px) {
 
     .banner {
@@ -260,11 +342,9 @@
         width: 80%;
         height: auto;
     }
-
-    .button-text {
-        left: 10px;
-    }
 }
+
+*/
 
 @media only screen and (max-width: 768px) {
 
@@ -272,38 +352,16 @@
         width: 85%;
         margin-bottom: 15px;
     }
-
-    .info-text {
-        width: 70%;
-    }
-
-    .button-text {
-        font-size: 15px;
-    }
 }
 
 
 @media only screen and (max-width: 500px) {
-    
-    .info-text {
-        font-size: 3.75vw;
-    }
 
-    .accordion {
+    /* .accordion {
         font-size: .75em;
         max-height: 75px;
         vertical-align: middle;
-    }
-
-    .accordion:before {
-        font-size: 1.2em;
-        /* transform: scale(.6); */
-        margin-bottom: 3px;
-    }
-
-    .button-text {
-        left: 0px;
-    }
+    } */
 
     .form-4473 {
         width: 90%;
@@ -316,4 +374,4 @@
     .button-text {
         font-size: 3.25vw;
     }
-}
+} 
